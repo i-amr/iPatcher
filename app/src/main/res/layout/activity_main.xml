@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/native_background"
+    android:padding="16dp"
+    tools:context=".ui.MainActivity" >
+
+    <ImageButton
+        android:id="@+id/btnClean"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background_borderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_clean" />
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_above="@id/bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_brand" />
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="4dp"
+        android:max="100"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="48dp"
+        android:fontFamily="@font/ggsans_regular"
+        android:textColor="#eee" />
+
+    <Button
+        android:id="@+id/btnPatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnImport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="4dp"
+        android:drawableLeft="@drawable/ic_patch"
+        android:text="Patch" />
+
+    <Button
+        android:id="@+id/btnImport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnInstall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="4dp"
+        android:drawableLeft="@drawable/ic_archive"
+        android:text="Import APKs" />
+
+    <Button
+        android:id="@+id/btnInstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnExport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="4dp"
+        android:drawableLeft="@drawable/ic_install"
+        android:text="Install" />
+
+    <Button
+        android:id="@+id/btnExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="4dp"
+        android:drawableLeft="@drawable/ic_export"
+        android:text="Export" />
+
+</RelativeLayout>
