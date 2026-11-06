@@ -1,0 +1,27 @@
+// Top-level build file
+
+buildscript {
+  repositories {
+    google()
+    maven { url 'https://jitpack.io' }
+    maven { url "https://plugins.gradle.org/m2/" }
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:8.4.0-alpha07'
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    maven { url 'https://jitpack.io' }
+    maven { url "https://plugins.gradle.org/m2/" }
+    mavenCentral()
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
